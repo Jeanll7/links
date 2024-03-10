@@ -19,7 +19,8 @@ export function Home() {
         </section>
 
         <footer className="flex justify-center gap-3 my-4">
-          <Social url="https://www.facebook.com/jean.c.leal.7/">
+          {/* <Social url="https://www.facebook.com/jean.c.leal.7/"> */}
+          <Social url="/login">
             <FaFacebook size={35} color='#1877F2' />
           </Social>
 
