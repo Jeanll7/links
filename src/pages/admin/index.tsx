@@ -2,7 +2,7 @@
 export function Admin() {
   return (
     <div>
-      Home
+      Página de admin
     </div>
   )
 }
