@@ -19,8 +19,16 @@ export function Home() {
         </section>
 
         <footer className="flex justify-center gap-3 my-4">
+          <Social url="https://www.facebook.com/jean.c.leal.7/">
+            <FaFacebook size={35} color='#1877F2' />
+          </Social>
+
           <Social url="https://www.linkedin.com/in/jean-leal/">
-            <FaFacebook size={35} color='fff' />
+            <FaLinkedin size={36} color='#0e76a8' />            
+          </Social>
+
+          <Social url="https://github.com/Jeanll7">
+            <FaGithub size={34} color='#fff' />
           </Social>
         </footer>
 
