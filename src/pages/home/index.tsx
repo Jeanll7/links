@@ -1,9 +1,13 @@
 import { Social } from '../../components/social'
+import toast, { Toaster } from 'react-hot-toast';
 
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 
 export function Home() {
+  
+  const notify = () => toast('Clicou no Sonner!');
+
   return (
     <div className="flex flex-col w-full py-4 items-center justify-center">
       <h1 className="md:text-4xl text-3xl text-white font-bold mt-20">Página de Links</h1>
@@ -11,12 +15,13 @@ export function Home() {
 
       <main className="flex flex-col w-11/12 max-w-xl text-center">
         <section className="bg-white mb-4 w-full py-2 rounded-lg select-none transition-transform hover:scale-105 cursor-pointer">
-          <a>
-            <p className="text-base md:text-lg">
-              Canal no youtube
-            </p>
+          <a onClick={notify}>
+            <p className="text-base md:text-lg font-medium">
+              Clique
+            </p>       
           </a>
-        </section>
+        </section>        
+        <Toaster position="top-right" />
         
         <footer className="flex justify-center gap-3 my-4">
           {/* <Social url="https://www.facebook.com/jean.c.leal.7/"> */}

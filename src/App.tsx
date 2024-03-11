@@ -10,20 +10,20 @@ import { PrivateRoute } from './routes/PrivateRoute'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
+    element: <Home/>
   },
   { 
     path: '/login',
-    element: <Login />
+    element: <Login/>
   },
   {
     path: '/admin',
-    element: <PrivateRoute><Admin /></PrivateRoute> 
+    element: <PrivateRoute><Admin/></PrivateRoute> 
     
   },
   {
     path: '/admin/social',
-    element: <Networks />
+    element: <PrivateRoute><Networks/></PrivateRoute>
   }
 ])
 
